@@ -1,0 +1,9 @@
+---
+# tasks file for hosts
+
+- name: test
+  debug:
+    msg: "{{ item['hostname'] }}"
+  with_items: "{{ hosts_info_list }}"
+
+
