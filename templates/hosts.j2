@@ -1,0 +1,4 @@
+{% for hosts_info in hosts_info_list %}
+{{ hosts_info['ipaddress'] }} {{ hosts_info['hostname'] }} {{ hosts_info['fqdn'] }}
+{% endfor %}
+

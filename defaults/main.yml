@@ -1,0 +1,10 @@
+---
+# defaults file for hosts
+hosts_info_list:
+  - ipaddress: 192.168.1.1
+    hostname: testwebsv01
+    fqdn: testwebsv01.test.local
+  - ipaddress: 172.16.1.1
+    hostname: testdbsv01
+    fqdn: testdbsv01.test.local
+

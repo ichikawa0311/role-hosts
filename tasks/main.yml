@@ -1,0 +1,15 @@
+---
+# tasks file for hosts
+
+- name: test
+  debug:
+    msg: "{{ item['hostname'] }}"
+  with_items: "{{ hosts_info_list }}"
+
+- name: create hosts
+  template:
+    src: hosts.j2
+    dest: /etc/hosts_test
+    owner: root
+    group: root
+    mode: 0644
