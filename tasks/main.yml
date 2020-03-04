@@ -6,7 +6,6 @@
     msg: "{{ item['hostname'] }}"
   with_items: "{{ hosts_info_list }}"
 
-<<<<<<< HEAD
 - name: create hosts
   template:
     src: hosts.j2
@@ -14,6 +13,4 @@
     owner: root
     group: root
     mode: 0644
-=======
 
->>>>>>> origin/master
